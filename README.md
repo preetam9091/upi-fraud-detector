@@ -6,7 +6,7 @@ A production-grade UPI transaction fraud detection system built across 4 phases:
 
 | Phase | What was built | Stack |
 |-------|---------------|-------|
-| 1 | PaySim-style synthetic data generator (400K transactions, 0.3% fraud) | Python |
+| 1 | RBI-calibrated synthetic UPI transactions (400K transactions, 0.3% fraud) | Python |
 | 2 | XGBoost model with SMOTE, 18 features, AUC-ROC >0.99 | XGBoost, SHAP, scikit-learn |
 | 3 | Real-time Kafka streaming pipeline | Go, Kafka, Redis |
 | **4** | **Live REST API — score any transaction in <200ms** | **FastAPI, Pydantic, Supabase** |
